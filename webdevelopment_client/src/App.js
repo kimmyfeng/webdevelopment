@@ -39,11 +39,11 @@
 // export default App;
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Practice from "./components/a8/Practice/index";
-import Build from "./components/a8/Build/index";
-import HomeScreen from "./components/a8/Build/HomeScreen/HomeScreen";
-import ProfileScreen from "./components/a8/Build/ProfileScreen/ProfileScreen";
-import ExploreScreen from "./components/a8/Build/ExploreScreen/ExploreScreen";
+import Practice from "./components/a9/Practice/index";
+import Build from "./components/a9/Build/index";
+import HomeScreen from "./components/a9/Build/HomeScreen/HomeScreen";
+import ProfileScreen from "./components/a9/Build/ProfileScreen/ProfileScreen";
+import ExploreScreen from "./components/a9/Build/ExploreScreen/ExploreScreen";
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
@@ -60,27 +60,27 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" exact={true} element={<Practice />} />
-            <Route path="/a8" exact={true} element={<Practice />} />
-            <Route path="/a8/build" exact={true} element={<Build />} />
-            <Route path="/a8/practice" exact={true} element={<Practice />} />
-            <Route path="/a8/twitter" exact={true} element={<Build />} />
+            <Route path="/a9" exact={true} element={<Practice />} />
+            <Route path="/a9/build" exact={true} element={<Build />} />
+            <Route path="/a9/practice" exact={true} element={<Practice />} />
+            <Route path="/a9/twitter" exact={true} element={<Build />} />
             <Route
-              path="/a8/twitter/home"
+              path="/a9/twitter/home"
               exact={true}
               element={<HomeScreen />}
             />
             <Route
-              path="/a8/twitter/profile"
+              path="/a9/twitter/profile"
               exact={true}
               element={<ProfileScreen />}
             />
             <Route
-              path="/a8/twitter/profileEdit"
+              path="/a9/twitter/profileEdit"
               exact={true}
               element={<ProfileScreen />}
             />
             <Route
-              path="/a8/twitter/explore"
+              path="/a9/twitter/explore"
               exact={true}
               element={<ExploreScreen />}
             />
